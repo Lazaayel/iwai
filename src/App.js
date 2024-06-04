@@ -14,6 +14,7 @@ import './Hooks.css';
 import './Redux.css';
 import './Metodyka.css';
 
+
 export default function App() {
 
     const [loading, setLoading] = useState(true);
@@ -30,7 +31,10 @@ export default function App() {
   
     if (loading) {
       return(
-        <h1 className='loading'>Ładowanie...</h1>
+        <div className='loading'>
+          <img src='../assets/loading.png' alt='loading' />
+        <h1>Ładowanie...</h1>
+        </div>
       );
     }
   
