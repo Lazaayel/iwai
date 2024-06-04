@@ -1,0 +1,57 @@
+.reactStylingContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reactStylingContainer>hr,
+.reactStylingOpenSource>hr {
+    width: 200px;
+    border: 2px solid #4619fa;
+}
+
+.reactStylingContainer>h1,
+.reactStylingOpenSource>h1 {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.reactStylingSpan {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#style2 {
+    margin-top: 20px;
+}
+
+.reactStylingTitle {
+    margin-top: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: #4619fa;
+    font-weight: 500;
+}
+
+.reactStylingEditor {
+    display: none;
+}
+
+.reactStylingOpenSource {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .reactStylingEditor {
+        display: flex;
+    }
+
+}

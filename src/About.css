@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+.about-container {
+    background-color: gray;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4),
+              0 -4px 8px rgba(0, 0, 0, 0.4),
+              4px 0 8px rgba(0, 0, 0, 0.4),
+              -4px 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.aboutHolder {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 10%;
+}
+
+.aboutHolder>h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.aboutHolder>span {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400; 
+    font-size: 20px;
+}
+
+.aboutHolder>button {
+    margin-top: 20px;
+    width: 160px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: gray;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.aboutHolder>button:hover {
+    background-color: white;
+    color: gray;
+    border: gray;
+}

@@ -1,0 +1,19 @@
+.StepButton {
+    margin-top: 40px;
+    width: 140px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid #4619fa;
+    border-radius: 2px;
+    color: #4619fa;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.StepButton:hover {
+    background-color: #4619fa;
+    color: white;
+}

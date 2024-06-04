@@ -1,0 +1,539 @@
+*body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*------------------------------ MAIN -------------------------------*/
+.mainButton {
+  color: #4619fa;
+  background: transparent;
+  border: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+.roadmapSplash {
+  display: none;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+}
+
+.mainNavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+  margin-right: 32px;
+  margin-top: 12px;
+}
+
+.mainButton {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.mainButton::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.mainButton:hover::after,
+.mainButton.active::after {
+  width: 100%;
+}
+
+
+/*------------------------------ ROADMAP -------------------------------*/
+
+.roadmapStepsContainer {
+  background-image: url("../assets/mainVertical.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.roadmapHero {
+  height: 500px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.roadmapHero>h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  z-index: 10;
+}
+
+.roadmapHero>span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.roadmapTitle1 {
+  margin-bottom: 0;
+  z-index: 10;
+}
+
+.roadmapTitle2 {
+  margin-top: 0;
+  z-index: 10;
+}
+
+.roadmapShadow {
+    width: 100%; 
+    height: 4px; 
+    background-color: #B8B8B8; 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 5px; 
+}
+
+.roadmapStepContainer:nth-child(1) {
+  margin-top: 80px;
+  margin-left: 50%;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.roadmapStepContainer:nth-child(2) {
+  margin-top: 80px;
+  margin-left: 25%;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.roadmapStepContainer:nth-child(3) {
+  margin-top: 80px;
+  margin-left: 55%;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.roadmapStepContainer:nth-child(4) {
+  margin-top: 80px;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.roadmapStepContainer:nth-child(5) {
+  margin-top: 80px;
+  margin-left: 45%;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.roadmapStepContainer:nth-child(6) {
+  margin-top: 80px;
+  margin-left: 25%;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.roadmapStageTitle {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  text-decoration: none;
+  margin-right: -8px;
+  align-items: center;
+}
+
+#roadmapTitle2 {
+  align-self: flex-start;
+  margin-left: -8px;
+}
+
+#roadmapTitle4 {
+  align-self: flex-start;
+  margin-left: -8px;
+}
+
+#roadmapTitle6 {
+  align-self: flex-start;
+  margin-left: -8px;
+}
+
+.roadmapStageTitle>a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.roadmapStageSubTitle {
+  color: gray; 
+    transition: color 0.5s; 
+}
+
+
+.roadmapStepContainer:hover .roadmapStageSubTitle {
+  color: black; 
+}
+
+@keyframes fillAnimation {
+  0% {
+    background-color: white; 
+    border-color: gray; 
+    color: gray;
+  }
+  100% {
+    background-color: #4619fa; 
+    border-color: #4619fa; 
+    color: black;
+  }
+}
+
+.roadmapStageContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#roadmap2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#roadmap4 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#roadmap6 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+.roadmapStepContainer .roadmapStageContainer .roadmapFoot {
+  width: 100px;
+  height: 2px;
+  background-color: gray; 
+}
+
+
+.roadmapStepContainer .roadmapStageContainer .roadmapHead {
+  width: 30px;
+  height: 30px;
+  border: 3px solid gray; 
+  
+}
+
+
+.roadmapStepContainer:hover .roadmapStageContainer .roadmapFoot {
+  animation: fillAnimation 1s forwards; 
+}
+
+.roadmapStepContainer:hover .roadmapStageContainer .roadmapHead {
+  animation: fillAnimation 1s 0.1s forwards;
+}
+
+
+@media only screen and (min-width: 600px) {
+  
+  .mainNavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-right: 32px;
+  }
+
+  .roadmapHero {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+  .roadmapStepContainer:nth-child(4) {
+    margin-top: 80px;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+  }
+  
+  .roadmapStepContainer:nth-child(5) {
+    margin-top: 80px;
+    margin-left: 60%;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+  }
+  
+  .roadmapStepContainer:nth-child(6) {
+    margin-top: 80px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+  }
+
+  .roadmapStepContainer .roadmapStageContainer .roadmapFoot {
+    width: 160px;
+    height: 2px;
+  }
+
+}
+
+@media only screen and (min-width: 800px) {
+  
+  .roadmapSplash {
+    display: block;
+    width: 700px;
+    height: 400px;
+    z-index: 0;
+    margin-top: -300px;
+    margin-left: -200px;
+  }
+  
+  .roadmapStepContainer:nth-child(6) {
+    margin-top: 80px;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+  }
+
+  .roadmapStepContainer .roadmapStageContainer .roadmapFoot {
+    width: 200px;
+    height: 2px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+  
+  .roadmapShadow {
+    display: none;
+  }
+
+  
+
+  .roadmapStepsContainer {
+    background-image: url("../assets/main.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .roadmapStepContainer:nth-child(1) {
+    margin-top: -10px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+  }
+  
+  .roadmapStepContainer:nth-child(2) {
+    margin-top: -80px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+  
+  }
+  
+  .roadmapStepContainer:nth-child(3) {
+    margin-top: -100px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+  
+  }
+  
+  .roadmapStepContainer:nth-child(4) {
+    margin-top: -40px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+  }
+  
+  .roadmapStepContainer:nth-child(5) {
+    margin-top: -60px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+  }
+  
+  .roadmapStepContainer:nth-child(6) {
+    margin-top: -120px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+  }
+
+  .roadmapStageContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    align-self: baseline;
+  }
+
+  #roadmap2 {
+    flex-direction: column-reverse;
+  }
+
+  #roadmap4 {
+    flex-direction: column-reverse;
+  }
+
+  #roadmap6 {
+    flex-direction: column-reverse;
+  }
+
+  .roadmapStepContainer .roadmapStageContainer .roadmapFoot {
+    width: 2px;
+    height: 200px;
+  }
+
+  .roadmapStageTitle {
+    align-self: flex-start;
+    margin-right: 0;
+    margin-left: 8px;
+  }
+
+  #roadmapTitle2 {
+    margin-left: 8px;
+  }
+
+  #roadmapTitle4 {
+    margin-left: 8px;
+  }
+
+  #roadmapTitle6 {
+    margin-left: 8px;
+  }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+  .roadmapStepsContainer {
+    height: 460px;
+  }
+
+  .roadmapStepContainer:nth-child(1) {
+    margin-top: 40px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+  }
+  
+  .roadmapStepContainer:nth-child(2) {
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+  
+  }
+  
+  .roadmapStepContainer:nth-child(3) {
+    margin-top: -80px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+  
+  }
+  
+  .roadmapStepContainer:nth-child(4) {
+    margin-top: 60px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+  }
+  
+  .roadmapStepContainer:nth-child(5) {
+    margin-top: 40px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+  }
+  
+  .roadmapStepContainer:nth-child(6) {
+    margin-top: -20px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+  }
+
+
+}
+
+@media only screen and (min-width: 2000px) {
+
+  .roadmapStepContainer:nth-child(4) {
+    margin-top: 100px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    
+  }
+}
